@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Border-radius Preview</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Border Radius Preview</h1>
+        <p>Change the border radius of the box using the inputs below</p>
+        <p>The numbers will be converted to percentages</p>
+        <div class="preview-wrap">
+            <div id=preview><span class="preview-text">Preview</span></div>
+        </div>
+        <div class="container">
+            <div>
+                <label for="top-left">Top Left</label>
+                <input type="range" min="0" max="100" step="1" value="0" name="top-left" id="topLeft">
+                <span id="displayTopLeft">0%</span>
+            </div>
+            <div>
+                <label for="top-right">Top Right</label>
+                <input type="range" min="0" max="100" step="1" value="0" name="top-right" id="topRight">
+                <span id="displayTopRight">0%</span>
+            </div>
+            <div>
+                <label for="bottom-left">Bottom Left</label>
+                <input type="range" min="0" max="100" step="1" value="0" name="bottom-left" id="bottomLeft">
+                <span id="displayBottomLeft">0%</span>
+            </div>
+            <div>
+                <label for="bottom-right">Bottom Right</label>
+                <input type="range" min="0" max="100" step="1" value="0" name="bottom-right" id="bottomRight">
+                <span id="displayBottomRight">0%</span>
+            </div>
+
+        </div>
+        <div id="displayResult" class="css-display">border-radius:
+            <span id="tLeft">0% </span><span id="tRight">0% </span><span id="bLeft">0% </span><span id="bRight">0%
+            </span>
+        </div>
+        <button id="copyCss">Copy to clipboard</button>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
